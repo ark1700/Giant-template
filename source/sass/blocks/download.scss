@@ -1,0 +1,130 @@
+.download {
+  background-color: $black-two;
+  background-image: linear-gradient(to right, $gradient 0%, $gradient-two 100%);
+}
+
+.download__wrap {
+  @include container;
+  padding: 30px 20px;
+}
+
+.download__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $white;
+  font-family: $dosis;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.download__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.download__item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.download__link {
+  display: flex;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
+  background-color: $white;
+
+  &:hover {
+    .download__icon {
+      fill: $active;
+    }
+  }
+}
+
+.download__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background-color: $white-two;
+  font-size: 72px;
+}
+
+.download__icon {
+  fill: $grey-two;
+}
+
+.download__text {
+  display: none;
+  padding: 15px 10px;
+}
+
+.download__header {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: $black-two;
+  font-family: $dosis;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.download__descr {
+  margin: 0;
+  color: $grey-two;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media (min-width: $screen-md) {
+  .download__wrap {
+    padding: 120px 20px;
+  }
+
+  .download__title {
+    margin-bottom: 75px;
+  }
+
+  .download__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download__item {
+    width: 360px;
+  }
+
+  .download__img {
+    width: 115px;
+    height: 115px;
+  }
+
+  .download__text {
+    display: block;
+    padding: 30px 20px;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .download__wrap {
+    padding: 100px 20px 120px;
+  }
+
+  .download__list {
+    flex-direction: row;
+  }
+
+  .download__item {
+    margin-bottom: 0;
+  }
+}

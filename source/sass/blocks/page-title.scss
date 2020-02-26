@@ -1,0 +1,29 @@
+.page-title {
+  margin: 0;
+  padding: 71px 0 76px;
+  background-color: $white-six;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+  color: $black;
+}
+
+@media (min-width: $screen-md) {
+  .page-title {
+    padding: 96px 20px 96px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    font-size: 43px;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .page-title {
+    padding-top: 93px;
+    padding-bottom: 120px;
+    font-size: 53px;
+  }
+}

@@ -1,0 +1,33 @@
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background-image: url("../img/video-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.video__btn {
+  width: 75px;
+  height: 75px;
+  background-color: $grey-three;
+  background-image: linear-gradient(to right, $gradient 0%, $gradient-two 100%);
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    @include center-block;
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 25px;
+    background-image: url("../img/icons/play-solid.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

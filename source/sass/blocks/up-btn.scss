@@ -1,0 +1,17 @@
+.up-btn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.up-btn--active {
+  display: block;
+}
+
+@media (min-width: $screen-md) {
+  .up-btn {
+    bottom: 20px;
+    right: 20px;
+  }
+}

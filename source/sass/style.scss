@@ -1,0 +1,31 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/features";
+@import "blocks/dont-leave";
+@import "blocks/screenshots";
+@import "blocks/pricing";
+@import "blocks/pricing-card";
+@import "blocks/video";
+@import "blocks/slick";
+@import "blocks/testimonials";
+@import "blocks/feedback";
+@import "blocks/download";
+@import "blocks/footer";
+@import "blocks/up-btn.scss";
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

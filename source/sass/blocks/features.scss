@@ -1,0 +1,118 @@
+.features__wrap {
+  @include container;
+  padding: 40px 20px;
+  border-bottom: 2px solid $white-three;
+}
+
+.features__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.features__item {
+  padding-left: 100px;
+  margin-bottom: 20px;
+  position: relative;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid $white-three;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--tag::before {
+    background-image: url("../img/icons/tags-solid.svg");
+    background-size: 27px 22px;
+  }
+
+  &--cog::before {
+    background-image: url("../img/icons/cog-solid.svg");
+    background-size: 27px 22px;
+  }
+
+  &--brush::before {
+    background-image: url("../img/icons/paint-brush-solid.svg");
+    background-size: 27px 22px;
+  }
+
+  &--fire-exting::before {
+    background-image: url("../img/icons/fire-extinguisher-solid.svg");
+    background-size: 27px 22px;
+  }
+
+  &--file::before {
+    background-image: url("../img/icons/file-alt-solid.svg");
+    background-size: 27px 22px;
+  }
+
+  &--life-ring::before {
+    background-image: url("../img/icons/life-ring-regular.svg");
+    background-size: 27px 22px;
+  }
+}
+
+
+.features__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: $black-two;
+  font-family: $dosis;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.features__descr {
+  margin: 0;
+  color: $grey-two;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media (min-width: $screen-md) {
+  .features__wrap {
+    padding: 120px 20px 60px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .features__item {
+    flex-grow: 1;
+    width: 40%;
+    margin-right: 35px;
+    margin-bottom: 29px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .features__item {
+    width: 30%;
+
+    &:nth-child(2n) {
+      margin-right: 42px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+

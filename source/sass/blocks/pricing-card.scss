@@ -1,0 +1,123 @@
+.pricing-card {
+  width: 262px;
+  padding-bottom: 40px;
+  background-color: $white-two;
+}
+
+.pricing-card__title {
+  margin: 0;
+  padding: 15px 10px 18px;
+  color: $grey-three;
+  font-family: $dosis;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.pricing-card__price {
+  flex-shrink: 0;
+  background-color: $white;
+  padding: 33px 10px 47px;
+  margin: 0;
+  margin-bottom: 32px;
+  color: $grey-three;
+  font-family: $dosis;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 24px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    border-left: 131px solid $white-two;
+    border-right: 131px solid $white-two;
+    border-top: 39px solid transparent;
+  }
+}
+
+.pricing-card__price-dollar,
+.pricing-card__price-month {
+  font-size: 18px;
+}
+
+.pricing-card__price-dollar {
+  vertical-align: top;
+  line-height: 8px;
+}
+
+.pricing-card__list {
+  padding: 0 25px;
+  margin-bottom: 37px;
+  list-style: none;
+}
+
+.pricing-card__item {
+  margin: 3px;
+  border-bottom: 1px dashed $white-three;
+  color: $grey-two;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.pricing-card__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-card__trial-link {
+  margin-bottom: 8px;
+  color: $grey;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23.95px;
+  text-decoration: none;
+}
+
+.pricing-card__buy-link {
+  padding: 7px 42px;
+  border-radius: 20px;
+  border: 1px solid $white-three;
+  background-color: $white;
+  color: $grey-three;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.95px;
+  text-decoration: none;
+}
+
+.pricing-card--active,
+.pricing-card:hover {
+  background-color: $white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  .pricing-card__price {
+    background-image: linear-gradient(to right, $gradient 0%, $gradient-two 100%);
+    color: $white;
+
+    &::before {
+      border-left: 131px solid $white;
+      border-right: 131px solid $white;
+    }
+  }
+
+  .pricing-card__buy-link {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    background-image: linear-gradient(to right, $gradient 0%, $gradient-two 100%);
+    color: $white;
+  }
+}
+

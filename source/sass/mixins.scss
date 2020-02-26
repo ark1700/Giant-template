@@ -1,0 +1,19 @@
+@mixin center-block {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin container {
+  margin: 0 auto;
+  max-width: $screen-sm;
+  box-sizing: border-box;
+
+  @media (min-width: $screen-md) {
+    max-width: $screen-md;
+  }
+
+  @media (min-width: $screen-lg) {
+    max-width: $screen-lg;
+  }
+}

@@ -1,0 +1,101 @@
+.promo {
+  background-image: url("../img/iPhones.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0 right -30px;
+  background-size: 320px auto;
+}
+
+.promo__wrap {
+  @include container;
+  padding: 40px 20px 200px;
+}
+
+.promo__title {
+  margin-top: 0;
+  margin-bottom: 22px;
+  color: $white;
+  font-family: $dosis;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.promo__text {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.promo__list {
+  margin: 0;
+  margin-bottom: 39px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.promo__item {
+  padding-left: 35px;
+  margin-bottom: 10px;
+  background-image: url("../img/icons/check-circle-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 15px 15px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.promo__link {
+  padding: 10px 43px;
+  // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  // border: 5px solid rgba(0, 0, 0, 0.1);
+  background-color: $white;
+  color: $black-two;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+@media (min-width: $screen-md) {
+  .promo {
+    background-position: bottom 0 right -55px;
+    background-size: 550px auto;
+  }
+
+  .promo__wrap {
+    padding: 114px 20px 224px;
+  }
+
+  .promo__title {
+    font-size: 54px;
+  }
+
+  .promo__list {
+    width: 450px;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .promo {
+    background-position: bottom 24px right -104px;
+    background-size: 800px auto;
+  }
+
+  .promo__content {
+    width: 500px;
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .promo {
+    background-position: bottom 24px right -104px;
+    background-size: 1070px auto;
+  }
+}
