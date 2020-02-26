@@ -1,8 +1,9 @@
 .video {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 400px;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
   background-image: url("../img/video-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
